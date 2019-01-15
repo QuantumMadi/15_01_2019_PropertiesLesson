@@ -1,0 +1,9 @@
+﻿property - синтаксический сахар для создания приватной переменной с геттерами и сеттерами
+autoproperty //public возвр_тип Название {мод_доступа get;мод_доступа set;}
+property (свойство) // private тип переменная;
+					// public возвр_тип Название {
+					// мод_доступа get{body;return перменная;}
+					// мод_доступа set{body;переменная = value;}
+indexator  -  use an object like an array;
+
+
