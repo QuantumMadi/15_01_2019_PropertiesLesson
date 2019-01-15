@@ -7,7 +7,7 @@
     <ProjectGuid>{2540CF80-8A38-4A88-A6C1-18B29F1A011A}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>_15_01_2019_Pract_work</RootNamespace>
-    <AssemblyName>_15_01_2019_Pract_work</AssemblyName>
+    <AssemblyName>15_01_2019_Pract_work</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -44,9 +44,13 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RangeOfArray.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Task.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

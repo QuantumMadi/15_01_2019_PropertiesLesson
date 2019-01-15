@@ -10,6 +10,7 @@ namespace _15_01_2019_Pract_work
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
