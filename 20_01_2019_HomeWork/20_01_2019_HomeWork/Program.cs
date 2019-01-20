@@ -11,7 +11,13 @@ namespace _20_01_2019_HomeWork
         static void Main(string[] args)
         {
             Squaring arr = new Squaring();
-            arr[4] = new Element { Elem = 10 };
+            arr[3] = 5;
+            Console.WriteLine(arr[3]);
+            //SquaringFirstVer arr = new SquaringFirstVer();
+            //arr[3] = 20;
+            //Console.WriteLine(arr[3]);
+            Console.ReadLine();
+            
         }
     }
 }

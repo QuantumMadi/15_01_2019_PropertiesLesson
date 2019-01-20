@@ -6,35 +6,36 @@ using System.Threading.Tasks;
 
 namespace _20_01_2019_HomeWork
 {
-    public class Element
+    public interface intContainer
     {
-        public int Elem { get; set; }
+        int this[int index] { get; set; }
     }
-   public class Squaring
+   public class Squaring 
     {
-        private Element[] array;
-        private int _arraySize;
-        public Squaring()
+        private List<int> someArray;
+        private  int size;
+        public Squaring ()
         {
-            _arraySize = 10;
-            array = new Element[_arraySize];
+            size = 10;
+            someArray = new List<int>(size);
         }
-        public Squaring(int arraySize)
+        public Squaring(int size)
         {
-            _arraySize = arraySize;
-            array = new Element[_arraySize];
+            this.size = size; 
+            someArray = new List<int>(this.size);
         }
-        public Element this[int index]
+        public int this[int index]
         {
-            get
+           get
             {
-                return array[index];
+                return someArray[index];
             }
             set
             {
-                Element some ;
-                array[index] = value;
+                someArray.Insert(index, value);
             }
         }
+      
+       
     }
 }

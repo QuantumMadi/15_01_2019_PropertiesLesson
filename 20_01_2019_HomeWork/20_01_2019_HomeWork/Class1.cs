@@ -6,14 +6,25 @@ using System.Threading.Tasks;
 
 namespace _20_01_2019_HomeWork
 {
-    public class Class1
+    public class SquaringFirstVer
     {
-        private int[] number;
-        public int this[int index] {
-
-            get;
-
+        public int[]array { get; set; }
+        private int arraySize;
+        public SquaringFirstVer()
+        {
+            arraySize = 10;
+            array = new int[arraySize];
         }
-
+        public int this[int index]
+        {
+            get
+            {
+                return array[index];
+            }
+            set
+            {
+                array[index] = value * value;
+            }
+        }
     }
 }
